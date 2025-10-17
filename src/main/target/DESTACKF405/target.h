@@ -83,7 +83,7 @@
 #define USE_IMU_ICM42605
 #define IMU_ICM42605_ALIGN          CW180_DEG
 #define ICM42605_CS_PIN             PA4
-// #define ICM42605_EXTI_PIN           PC4
+#define ICM42605_EXTI_PIN           PC4
 #define ICM42605_SPI_BUS            BUS_SPI1
 // OSD
 #define USE_OSD
@@ -104,6 +104,7 @@
 #define USE_BARO
 #define BARO_I2C_BUS                BUS_I2C1
 #define USE_BARO_DPS310
+#define DPS310_I2C_ADDR             0x77
 // Mag
 #define USE_MAG
 #define MAG_I2C_BUS                 BUS_I2C1
@@ -113,9 +114,9 @@
 
 // Others
 #define MAX_PWM_OUTPUT_PORTS 6
-#define USE_SERIAL_4WAY_BLHELI_INTERFACE
 #define USE_DSHOT
-#define USE_ESC_SENSOR
+// #define USE_SERIAL_4WAY_BLHELI_INTERFACE
+// #define USE_ESC_SENSOR
 
 #define TARGET_IO_PORTA 0xffff
 #define TARGET_IO_PORTB 0xffff
